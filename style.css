@@ -1,12 +1,4 @@
-/*
-    Theme Name: MZiQ - Initial Theme
-    Author: Gabriel
-    Author URI: https://www.mzgroup.com/
-    Description: MZiQ CMS Theme for Acelen Redesign website.
-    License: GNU General Public License v2 or later
 
-    One and only theme for IR Website for Acelen
-*/
 *,
 *::before,
 *::after {
@@ -501,7 +493,7 @@ body {
 }
 
 .pulse {
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
   width: 100%;
