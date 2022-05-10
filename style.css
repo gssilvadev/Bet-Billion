@@ -426,7 +426,7 @@ body {
 
 .elementor-background-overlay {
   background-image: url(https://st.depositphotos.com/1000826/2235/i/600/depositphotos_22352573-stock-photo-soccer-field-with-bright-lights.jpg);
-  background-position: bottom -630px right 1px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
