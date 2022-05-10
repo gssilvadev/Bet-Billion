@@ -1,0 +1,289 @@
+*,
+*::before,
+*::after {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0 0 48px 0;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+
+    footer {
+        margin-top: auto; 
+    }
+
+    &.admin-bar {
+        min-height: calc(100vh - 46px); 
+        
+        @media screen and (min-width: 782px) {
+          min-height: calc(100vh - 32px); 
+        } 
+    }
+
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: $textFont;
+    font-size: $fontSize;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    color: $textColor;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $textFont;
+    line-height: 130%;
+
+    @media (min-width: $screen-xl) {
+        font-size: 16px;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    color: $textColor;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $fontBase;
+    line-height: 150%;
+
+    @media (min-width: $screen-xl) {
+        font-size: 16px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,.h5,
+h6 {
+    color: $titleColor;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #FFF;
+    font-family: $fontBase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    
+    @media (min-width: $screen-xl) {
+        font-size: 32px;
+    }
+}
+
+h2 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    
+    @media (min-width: $screen-xl) {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+
+h3 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    
+    @media (min-width: $screen-xl) {
+        font-size: 22px;
+    }
+}
+
+h4 {
+    color: $tertiaryColor;
+    font-family: $textFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    
+    @media (min-width: $screen-xl) {
+        line-height: 22px;
+    }
+}
+
+h5,.h5 {
+    color: $primaryColor;
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    
+    @media (min-width: $screen-xl) {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+h6 {
+    color: $textColor;
+    font-family: $fontBase;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    
+    @media (min-width: $screen-xl) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    color: $textColor3;
+    text-decoration: none;
+
+    &:hover {
+        opacity: .85;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overflow {
+    width: 100%;
+    overflow: auto;
+}
+
+*::-webkit-scrollbar-track { background-color: rgba($backgroundColor5, 1) !important; border-radius: 3px;}
+*::-moz-scrollbar-track { background-color: rgba($backgroundColor5, 1) !important; border-radius: 3px;}
+*::-ms-scrollbar-track { background-color: rgba($backgroundColor5, 1) !important; border-radius: 3px;}
+*::-o-scrollbar-track { background-color: rgba($backgroundColor5, 1) !important; border-radius: 3px;}
+
+*::-webkit-scrollbar { width: 9px !important; height: 9px !important; @include transition(.377s); }
+*::-moz-scrollbar { width: 9px !important; height: 9px !important; @include transition(.377s); }
+*::-ms-scrollbar { width: 9px !important; height: 9px !important; @include transition(.377s); }
+*::-o-scrollbar { width: 9px !important; height: 9px !important; @include transition(.377s); }
+
+*::-webkit-scrollbar-thumb:hover { background: rgba($primaryColor, .75) !important; }
+*::-moz-scrollbar-thumb:hover { background: rgba($primaryColor, .75) !important; }
+*::-ms-scrollbar-thumb:hover { background: rgba($primaryColor, .75) !important; }
+*::-o-scrollbar-thumb:hover { background: rgba($primaryColor, .75) !important; }
+
+*::-webkit-scrollbar-thumb:active { background: rgba($secondaryColor, 1) !important; }
+*::-moz-scrollbar-thumb:active { background: rgba($secondaryColor, 1) !important; }
+*::-ms-scrollbar-thumb:active { background: rgba($secondaryColor, 1) !important; }
+*::-o-scrollbar-thumb:active { background: rgba($secondaryColor, 1) !important; }
+
+*::-webkit-scrollbar-thumb {border-radius: 0; background: rgba($primaryColor, 1) !important; border-radius: 3px; }
+*::-moz-scrollbar-thumb {border-radius: 0; background: rgba($primaryColor, 1) !important; border-radius: 3px; }
+*::-ms-scrollbar-thumb {border-radius: 0; background: rgba($primaryColor, 1) !important; border-radius: 3px; }
+*::-o-scrollbar-thumb {border-radius: 0; background: rgba($primaryColor, 1) !important; border-radius: 3px; }
+
+main {
+    *::-webkit-scrollbar-thumb:hover { background: rgba($backgroundColor4, .75) !important; }
+    *::-moz-scrollbar-thumb:hover { background: rgba($backgroundColor4, .75) !important; }
+    *::-ms-scrollbar-thumb:hover { background: rgba($backgroundColor4, .75) !important; }
+    *::-o-scrollbar-thumb:hover { background: rgba($backgroundColor4, .75) !important; }
+
+    *::-webkit-scrollbar-thumb {border-radius: 0; background: rgba($backgroundColor4, 1) !important; border-radius: 3px; }
+    *::-moz-scrollbar-thumb {border-radius: 0; background: rgba($backgroundColor4, 1) !important; border-radius: 3px; }
+    *::-ms-scrollbar-thumb {border-radius: 0; background: rgba($backgroundColor4, 1) !important; border-radius: 3px; }
+    *::-o-scrollbar-thumb {border-radius: 0; background: rgba($backgroundColor4, 1) !important; border-radius: 3px; }
+}
+
+.slick-config {
+    .slick-dots {
+        bottom: -32px;
+        li {
+            &.slick-active {
+                button {
+                    background: $secondaryColor;
+                }
+            }
+            button {
+                background: $primaryColor;
+                border: 4px solid $primaryColor;
+            }
+        }
+    }
+    .slick-list {
+        @media(min-width: 992px) {
+            margin: 0 -27px;
+            .slick-track {
+                .slick-slide {
+                    margin: 0 27px;
+                }
+            }
+        }
+    }
+}
+
+.slick-config2 {
+    .slick-dots {
+        bottom: -32px;
+        li {
+            &.slick-active {
+                button {
+                    background: $primaryColor;
+                }
+            }
+            button {
+                background: $secondaryColor;
+                border: 4px solid $secondaryColor;
+            }
+        }
+    }
+    .slick-list {
+        @media(min-width: 992px) {
+            margin: 0 -27px;
+            .slick-track {
+                .slick-slide {
+                    margin: 0 27px;
+                }
+            }
+        }
+    }
+}

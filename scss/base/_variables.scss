@@ -1,0 +1,40 @@
+// COLORS
+$primaryColor: #0573FA;
+$secondaryColor: #FFFFFF;
+$tertiaryColor: #F2986F;
+$quaternaryColor: #8BB7ED;
+$titleColor: $primaryColor;
+$textColor: #363635;
+$textColor2: #4F4F50;
+$textColor3: #5FA1F2;
+$textColor4: #A8A8A8;
+;
+$backgroundColor: #F4F8FC;
+$backgroundColor2: #328AF6;
+$backgroundColor3: #B8CEE9;
+$backgroundColor4: #FA6420;
+$backgroundColor5: #ECECEC;
+// FONTS
+$fontBase: 'Sora',
+sans-serif;
+$textFont: $fontBase;
+$fontSize: 16px;
+$lineHeight: 130%;
+// FONTS - WEIGHT
+$fontLight: 300;
+$fontRegular: 400;
+$fontMedium: 500;
+$fontBold: 700;
+$high: #A5FF97;
+$low: #FD7979;
+// SPACING
+$gap: 15px;
+//screen sizes
+$screen-xl: 1200px;
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+//button sizes
+$btnlg: 200px;
+$btnmd: 165px;
+$btnsm: 105px;

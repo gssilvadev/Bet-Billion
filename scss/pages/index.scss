@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  position: relative;
+}
+.boxer_offer {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(150deg, #18392b 0%, #030504 100%);
+  background-color: transparent;
+  height: 83px;
+  width: 100%;
+  p {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 29px 0;
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}
+
+.elementor-background-overlay {
+  background-image: url(https://st.depositphotos.com/1000826/2235/i/600/depositphotos_22352573-stock-photo-soccer-field-with-bright-lights.jpg);
+  background-position: bottom -630px right 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  filter: blur(5px);
+  @media (max-width: 768px) {
+    background-position: center;
+
+  }
+ 
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 90px;
+}
+
+.row {
+  margin: 20px;
+  video {
+    visibility: visible;
+    max-height: 100vh;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 39px;
+    background-color: transparent;
+    background-image:linear-gradient(150deg, #18392b 0%, #030504 100%);
+    border-radius: 40px 40px 40px 40px;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+    a {
+      margin: 13px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-family: "Montserrat", Sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+      @media (max-width: 768px) {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.pulse {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  .elementor-button-wrapper {
+    position: fixed;
+    left: 50%;
+    @include translate(-50%, -50%);
+    top: 80%;
+    display: inline-block;
+    -webkit-animation: pulse 1s infinite;
+    line-height: 1;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #18392b 0%, #030504 100%);
+    border-radius: 40px 40px 40px 40px;
+    font-size: 15px;
+    padding: 12px 24px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+   
+    span {
+      color: white;
+    }
+   
+  }
+}

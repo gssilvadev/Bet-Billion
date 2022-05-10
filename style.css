@@ -1,0 +1,541 @@
+/*
+    Theme Name: MZiQ - Initial Theme
+    Author: Gabriel
+    Author URI: https://www.mzgroup.com/
+    Description: MZiQ CMS Theme for Acelen Redesign website.
+    License: GNU General Public License v2 or later
+
+    One and only theme for IR Website for Acelen
+*/
+*,
+*::before,
+*::after {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0 0 48px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body footer {
+  margin-top: auto;
+}
+body.admin-bar {
+  min-height: calc(100vh - 46px);
+}
+@media screen and (min-width: 782px) {
+  body.admin-bar {
+    min-height: calc(100vh - 32px);
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+body,
+input,
+textarea,
+button {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #363635;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  line-height: 130%;
+}
+@media (min-width: 1200px) {
+  ul, li {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #363635;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  line-height: 150%;
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, .h5,
+h6 {
+  color: #0573FA;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #FFF;
+  font-family: "Sora", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+h3 {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  color: #F2986F;
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  h4 {
+    line-height: 22px;
+  }
+}
+
+h5, .h5 {
+  color: #0573FA;
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  h5, .h5 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+h6 {
+  color: #363635;
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+@media (min-width: 1200px) {
+  h6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #5FA1F2;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.85;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ececec !important;
+  border-radius: 3px;
+}
+
+*::-moz-scrollbar-track {
+  background-color: #ececec !important;
+  border-radius: 3px;
+}
+
+*::-ms-scrollbar-track {
+  background-color: #ececec !important;
+  border-radius: 3px;
+}
+
+*::-o-scrollbar-track {
+  background-color: #ececec !important;
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar {
+  width: 9px !important;
+  height: 9px !important;
+  -webkit-transition: 0.377s all;
+  -moz-transition: 0.377s all;
+  -ms-transition: 0.377s all;
+  -o-transition: 0.377s all;
+  transition: 0.377s all;
+}
+
+*::-moz-scrollbar {
+  width: 9px !important;
+  height: 9px !important;
+  -webkit-transition: 0.377s all;
+  -moz-transition: 0.377s all;
+  -ms-transition: 0.377s all;
+  -o-transition: 0.377s all;
+  transition: 0.377s all;
+}
+
+*::-ms-scrollbar {
+  width: 9px !important;
+  height: 9px !important;
+  -webkit-transition: 0.377s all;
+  -moz-transition: 0.377s all;
+  -ms-transition: 0.377s all;
+  -o-transition: 0.377s all;
+  transition: 0.377s all;
+}
+
+*::-o-scrollbar {
+  width: 9px !important;
+  height: 9px !important;
+  -webkit-transition: 0.377s all;
+  -moz-transition: 0.377s all;
+  -ms-transition: 0.377s all;
+  -o-transition: 0.377s all;
+  transition: 0.377s all;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(5, 115, 250, 0.75) !important;
+}
+
+*::-moz-scrollbar-thumb:hover {
+  background: rgba(5, 115, 250, 0.75) !important;
+}
+
+*::-ms-scrollbar-thumb:hover {
+  background: rgba(5, 115, 250, 0.75) !important;
+}
+
+*::-o-scrollbar-thumb:hover {
+  background: rgba(5, 115, 250, 0.75) !important;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background: white !important;
+}
+
+*::-moz-scrollbar-thumb:active {
+  background: white !important;
+}
+
+*::-ms-scrollbar-thumb:active {
+  background: white !important;
+}
+
+*::-o-scrollbar-thumb:active {
+  background: white !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #0573fa !important;
+  border-radius: 3px;
+}
+
+*::-moz-scrollbar-thumb {
+  border-radius: 0;
+  background: #0573fa !important;
+  border-radius: 3px;
+}
+
+*::-ms-scrollbar-thumb {
+  border-radius: 0;
+  background: #0573fa !important;
+  border-radius: 3px;
+}
+
+*::-o-scrollbar-thumb {
+  border-radius: 0;
+  background: #0573fa !important;
+  border-radius: 3px;
+}
+
+main *::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 100, 32, 0.75) !important;
+}
+main *::-moz-scrollbar-thumb:hover {
+  background: rgba(250, 100, 32, 0.75) !important;
+}
+main *::-ms-scrollbar-thumb:hover {
+  background: rgba(250, 100, 32, 0.75) !important;
+}
+main *::-o-scrollbar-thumb:hover {
+  background: rgba(250, 100, 32, 0.75) !important;
+}
+main *::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #fa6420 !important;
+  border-radius: 3px;
+}
+main *::-moz-scrollbar-thumb {
+  border-radius: 0;
+  background: #fa6420 !important;
+  border-radius: 3px;
+}
+main *::-ms-scrollbar-thumb {
+  border-radius: 0;
+  background: #fa6420 !important;
+  border-radius: 3px;
+}
+main *::-o-scrollbar-thumb {
+  border-radius: 0;
+  background: #fa6420 !important;
+  border-radius: 3px;
+}
+
+.slick-config .slick-dots {
+  bottom: -32px;
+}
+.slick-config .slick-dots li.slick-active button {
+  background: #FFFFFF;
+}
+.slick-config .slick-dots li button {
+  background: #0573FA;
+  border: 4px solid #0573FA;
+}
+@media (min-width: 992px) {
+  .slick-config .slick-list {
+    margin: 0 -27px;
+  }
+  .slick-config .slick-list .slick-track .slick-slide {
+    margin: 0 27px;
+  }
+}
+
+.slick-config2 .slick-dots {
+  bottom: -32px;
+}
+.slick-config2 .slick-dots li.slick-active button {
+  background: #0573FA;
+}
+.slick-config2 .slick-dots li button {
+  background: #FFFFFF;
+  border: 4px solid #FFFFFF;
+}
+@media (min-width: 992px) {
+  .slick-config2 .slick-list {
+    margin: 0 -27px;
+  }
+  .slick-config2 .slick-list .slick-track .slick-slide {
+    margin: 0 27px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  position: relative;
+}
+
+.boxer_offer {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(150deg, #18392b 0%, #030504 100%);
+  background-color: transparent;
+  height: 83px;
+  width: 100%;
+}
+.boxer_offer p {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 29px 0;
+}
+@media (max-width: 768px) {
+  .boxer_offer p {
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.elementor-background-overlay {
+  background-image: url(https://st.depositphotos.com/1000826/2235/i/600/depositphotos_22352573-stock-photo-soccer-field-with-bright-lights.jpg);
+  background-position: bottom -630px right 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  filter: blur(5px);
+}
+@media (max-width: 768px) {
+  .elementor-background-overlay {
+    background-position: center;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 90px;
+}
+
+.row {
+  margin: 20px;
+}
+.row video {
+  visibility: visible;
+  max-height: 100vh;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.row .button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 39px;
+  background-color: transparent;
+  background-image: linear-gradient(150deg, #18392b 0%, #030504 100%);
+  border-radius: 40px 40px 40px 40px;
+}
+@media (max-width: 768px) {
+  .row .button {
+    margin-bottom: 20px;
+  }
+}
+.row .button a {
+  margin: 13px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+@media (max-width: 768px) {
+  .row .button a {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.pulse {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+.pulse .elementor-button-wrapper {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 80%;
+  display: inline-block;
+  -webkit-animation: pulse 1s infinite;
+  line-height: 1;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-image: linear-gradient(150deg, #18392b 0%, #030504 100%);
+  border-radius: 40px 40px 40px 40px;
+  font-size: 15px;
+  padding: 12px 24px;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pulse .elementor-button-wrapper span {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
